@@ -115,6 +115,7 @@ p {
 .form-agreement {
   font-size: 12px;
   color: var(--color-neutral-grayish-blue);
+  text-align: center;
 }
 
 .form-agreement a {
