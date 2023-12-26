@@ -13,11 +13,20 @@
 }
 
 body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: var(--font-poppins);
   margin: 0;
   background-image: url("./images/bg-intro-desktop.png");
   background-repeat: no-repeat;
   background-color: var(--color-primary-red);
+}
+
+.main {
+  display: flex;
+  padding: 32px;
 }
 
 .attribution {
