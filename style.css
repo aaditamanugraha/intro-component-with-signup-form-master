@@ -3,7 +3,7 @@
 :root {
   --color-primary-red: hsl(0, 100%, 74%);
   --color-primary-green: hsl(154, 59%, 51%);
-  
+
   --color-secondary-dark-green: hsl(154, 55%, 42%);
 
   --color-accent-blue: hsl(248, 32%, 49%);
@@ -143,7 +143,8 @@ p {
     height: 100%;
   }
 
-  h1, p {
+  h1,
+  p {
     text-align: center;
   }
 
@@ -163,5 +164,4 @@ p {
     width: 80%;
     padding: 0;
   }
-  
 }
