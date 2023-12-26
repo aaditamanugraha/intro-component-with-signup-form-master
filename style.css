@@ -39,6 +39,7 @@ p {
   display: flex;
   align-items: center;
   padding: 0 15%;
+  margin-bottom: 32px;
 }
 
 .header {
@@ -58,7 +59,7 @@ p {
 
 .pricing {
   background-color: var(--color-accent-blue);
-  padding: 12px 0;
+  padding: 16px 0;
   display: flex;
   justify-content: center;
   border-radius: 8px;
