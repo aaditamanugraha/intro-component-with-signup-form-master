@@ -3,6 +3,8 @@
 :root {
   --color-primary-red: hsl(0, 100%, 74%);
   --color-primary-green: hsl(154, 59%, 51%);
+  
+  --color-secondary-dark-green: hsl(154, 55%, 42%);
 
   --color-accent-blue: hsl(248, 32%, 49%);
 
@@ -24,18 +26,25 @@ body {
   background-color: var(--color-primary-red);
 }
 
+h1,
+p {
+  margin: 0;
+}
+
 .main {
   display: flex;
-  padding: 0 64px;
+  padding: 0 15%;
 }
 
 .header {
+  width: 50%;
   color: white;
   padding: 0 16px 0 0;
 }
 
 .form-container {
   padding: 0 0 0 16px;
+  width: 50%;
 }
 
 .pricing {
@@ -46,11 +55,52 @@ body {
   border-radius: 8px;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 0px;
+  margin-bottom: 24px;
 }
 
 .pricing p {
-  margin: 0;
   font-weight: 400;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+}
+
+.form input {
+  font-family: var(--font-poppins);
+  font-weight: 500;
+  border: 1px solid var(--color-neutral-grayish-blue);
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.submit-btn {
+  padding: 12px;
+  background-color: var(--color-primary-green);
+  border: none;
+  color: white;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  box-shadow: var(--color-secondary-dark-green) 0px 4px;
+  margin-bottom: 16px;
+}
+
+.form-agreement {
+  font-size: 12px;
+  color: var(--color-neutral-grayish-blue);
+}
+
+.form-agreement a {
+  color: var(--color-primary-red);
+  text-decoration: none;
+  font-weight: 700;
 }
 
 .attribution {
