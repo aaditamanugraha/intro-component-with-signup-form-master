@@ -22,7 +22,8 @@ body {
   font-family: var(--font-poppins);
   margin: 0;
   background-image: url("./images/bg-intro-desktop.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-size: contain;
   background-color: var(--color-primary-red);
 }
 
@@ -59,7 +60,7 @@ p {
 
 .pricing {
   background-color: var(--color-accent-blue);
-  padding: 16px 0;
+  padding: 16px 32px;
   display: flex;
   justify-content: center;
   border-radius: 8px;
@@ -130,8 +131,37 @@ p {
   font-size: 11px;
   text-align: center;
   color: white;
+  margin-bottom: 16px;
 }
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    height: 100%;
+  }
+
+  h1, p {
+    text-align: center;
+  }
+
+  .main {
+    flex-direction: column;
+    padding: 0;
+    min-width: 320px;
+  }
+
+  .header {
+    width: 80%;
+    padding: 0;
+    margin: 64px 0 64px 0;
+  }
+
+  .form-container {
+    width: 80%;
+    padding: 0;
+  }
+  
 }
