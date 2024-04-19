@@ -44,10 +44,17 @@ document.getElementById("sign_up_form").addEventListener("submit", (event) => {
     return;
   }
 
-  console.log("First name:", firstName);
-  console.log("Last name:", lastName);
-  console.log("Email:", email);
-  console.log("Password:", password);
+  sessionStorage.setItem(
+    "formData",
+    JSON.stringify({
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      password: password,
+    })
+  );
+
+  window.location.href = "trial-success-display.html";
 });
 
 function isValidEmail(email) {
