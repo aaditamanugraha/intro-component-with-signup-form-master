@@ -28,7 +28,7 @@
           <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
         </div>
 
-        <form class="form" novalidate>
+        <form class="form" id="sign_up_form" novalidate>
           <div class="input-container">
             <input
               type="text"
@@ -38,7 +38,7 @@
               required
             />
             <div class="error-container">
-              <p class="error-text"></p>
+              <p class="error-text" id="first_name_error"></p>
             </div>
           </div>
 
@@ -51,7 +51,7 @@
               required
             />
             <div class="error-container">
-              <p class="error-text">test</p>
+              <p class="error-text" id="last_name_error"></p>
             </div>
           </div>
 
@@ -64,7 +64,7 @@
               required
             />
             <div class="error-container">
-              <p class="error-text">test</p>
+              <p class="error-text" id="email_error"></p>
             </div>
           </div>
 
@@ -77,7 +77,7 @@
               required
             />
             <div class="error-container">
-              <p class="error-text">test</p>
+              <p class="error-text" id="password_error"></p>
             </div>
           </div>
 
